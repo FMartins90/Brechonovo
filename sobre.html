@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Gloock:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Brechó da Nah</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header__container d-flex justify-content-between align-items-center p-3">
+        <!-- Logo à esquerda -->
+        <div class="logo">
+            <img src="assets/logo-brecho.png" alt=" Brechó da Nah" class="img-fluid">
+        </div>
+        
+        <!-- Menu de navegação centralizado (visível em telas grandes) -->
+        <nav class="main-nav d-none d-lg-block">
+            <ul class="d-flex gap-4">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+            </ul>
+        </nav>
+         <a href="https://wa.me/5513991003591" class="btn btn-contato d-none d-lg-block">Contato</a>
+
+        <!-- Menu hamburguer para telas pequenas -->
+        <button class="menu-toggle d-lg-none">&#9776;</button>
+    </header>
+
+    <!-- Menu hamburguer (oculto inicialmente) -->
+    <nav class="mobile-nav d-lg-none">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="catalogo.html">Catálogo Completo</a></li>
+            <li><a href="catalogo.html">Acessórios</a></li>
+            <li><a href="catalogo.html">Blusas</a></li>
+            <li><a href="catalogo.html">Calças</a></li>
+            <li><a href="catalogo.html">Calçados</a></li>
+            <li><a href="catalogo.html">Saias</a></li>
+            <li><a href="catalogo.html">Shorts</a></li>
+            <li><a href="catalogo.html">Vestidos</a></li>
+            <li><a href="catalogo.html">Outros</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Hero -->
+<section class="hero d-flex align-items-center">
+    <div class="hero-content d-flex align-items-center">
+        <div class="hero-image">
+            <img src="assets/Nah.png" alt="Imagem da Nah" class="img-fluid">
+        </div>
+        <div class="hero-text">
+            <h1 class="animated-text">Brechó da Nah</h1>
+            <p class="highlighted-text">Vestindo bem, pagando pouco</p>
+
+            <!-- Ícones das Redes Sociais  -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/profile.php?id=100081590388205" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/brechodanah27" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Seção Sobre Nós -->
+<section id="sobre" class="sobre">
+    <div class="container">
+        <div class="sobre__imagem">
+            <img src="assets/Sobre/sobre-brecho.jpg" alt="Sobre Nós">
+        </div>
+        <div class="sobre__texto">
+            <h2 class="pulse-text">Sobre o Brechó</h2>
+            <p>A histório do Brechó da Nah se inicia em 2023 proximo ao fim da pandemia de Covid 19 apenas com atendimento via whatsapp, com
+                 o termino da pandemia iniciamos os atendimentos presenciais, em junho de 2023 participação do 1º Festival de Brechós em Mongaguá
+                e em demais eventos e "feiras" que ocorrem na cidade.</p>
+        </div>
+    </div>
+</section>
+
+ <!-- Seção Galeria -->
+ <section id="galeria">
+    <div class="container text-center">
+        <h2 class="galeria-title">Eventos</h2>
+        <div class="galeria__grid">
+            <img src="assets/Sobre/brecho-galeria1.jpeg" alt="Evento" class="galeria-image">
+            <img src="assets/Sobre/brecho-galeria2.jpeg" alt="Brechó Centro Cultural" class="galeria-image">
+            <img src="assets/Sobre/brecho-galeria3.jpeg" alt="Evento Brecholeiras" class="galeria-image">
+            <img src="assets/Sobre/brecho-galeria4.jpeg" alt="Festival de Brechós" class="galeria-image">
+        </div>
+    </div>
+</section>
+
+   <!-- Rodapé -->
+   <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100081590388205" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/brechodanah27" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2022 Brechó da Nah</p>
+        <p>Vestindo bem, pagando pouco</p>
+    </div>
+</footer>
+
+     <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        menuToggle.addEventListener('click', function() {
+            mobileNav.classList.toggle('active');
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
