@@ -494,7 +494,6 @@ nav.scrolled {
 
 .hero-title {
 	font-size: clamp(50px, 7vw, 70px);
-	text-align: center;
 	font-weight: 900;
 	line-height: 1.1;
 	margin-bottom: 25px;
@@ -560,7 +559,6 @@ nav.scrolled {
 	color: var(--text-muted);
 	margin-bottom: 40px;
 	animation: fadeIn 1s ease 0.6s backwards;
-	text-align: center;
 }
 
 .cta-button {
@@ -847,7 +845,7 @@ nav.scrolled {
 	align-items: center;
 	justify-content: center;
 	font-size: 50px;
-	/*opacity: 0.3;*/
+	opacity: 0.3;
 	transition: transform 0.5s ease, opacity 0.5s ease;
 	position: relative;
 	overflow: hidden;
@@ -870,8 +868,8 @@ nav.scrolled {
 }
 
 .collection-thumbnail img {
-	width: 300px;
-	height: 300px;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 }
 
@@ -1092,4 +1090,33 @@ nav.scrolled {
 		height: 300px;
 		margin-top: 40px;
 	}
+
+
+	/*pagination*/
+	.pagination {
+		display: flex;
+		justify-content: center;
+		list-style: none;
+		padding: 0px;
+	  }
+	  
+	  .pagination li a {
+		display: block;
+		padding: 12px 12px;
+		text-decoration: none;
+		border: 1px solid #ffffff;
+		color: #ffffff;
+		margin: 0 4px;
+		border-radius: 5px;
+		transition: background-color 1s;  
+	  }
+	  
+	  .pagination li a.active {
+		background-color: #ff3366;
+		color: rgb(255, 255, 255);
+	  }
+	  
+	  .pagination li a:hover:not(.active) {
+		background-color: lightgray;
+	  }
 }
