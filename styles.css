@@ -904,12 +904,12 @@ nav.scrolled {
 	color: var(--text-muted);
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-size: 11px;
+	font-size: 16px;
 	margin-bottom: 12px;
 }
 
 .card-price {
-	font-size: 18px;
+	font-size: 24px;
 	text-align: center;
 	color: var(--accent);
 	font-weight: 600;
@@ -965,7 +965,7 @@ nav.scrolled {
 	padding: 4px 12px;
 	background: var(--accent);
 	color: white;
-	font-size: 9px;
+	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: 12px;
